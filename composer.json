@@ -1,0 +1,13 @@
+{
+    "name": "mapseven/contactform",
+    "type": "typo3-flow-plugin",
+    "description": "Simple Contact Form for TYPO3 Neos",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "MapSeven\\ContactForm": "Classes"
+        }
+    }
+}

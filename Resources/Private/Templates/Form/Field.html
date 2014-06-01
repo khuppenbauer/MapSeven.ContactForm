@@ -1,0 +1,13 @@
+{namespace form=TYPO3\Form\ViewHelpers}
+<f:form.validationResults for="{element.identifier}">
+    <div class="row">
+        <div class="small-12 columns">
+            <f:render section="field" />
+            <f:if condition="{validationResults.flattenedErrors}">
+                <f:for each="{validationResults.errors}" as="error">
+                    <small class="error">{error -> f:translate(id: error.code, arguments: error.arguments, package: '{element.renderingOptions.translationPackage}', source: 'ValidationErrors')}</small>
+                </f:for>
+            </f:if>
+        </div>
+    </div>
+</f:form.validationResults>
