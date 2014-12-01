@@ -1,3 +1,4 @@
+
 'TYPO3.Neos.NodeTypes:Form':
   properties:
     formIdentifier:
@@ -5,6 +6,6 @@
         inspector:
           editorOptions:
             values:
-              '': ~
-              'Contact':
+              '': null
+              Contact:
                 label: 'Contact form'

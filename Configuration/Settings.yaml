@@ -1,3 +1,4 @@
+
 TYPO3:
   Form:
     yamlPersistenceManager:
@@ -5,7 +6,7 @@ TYPO3:
     presets:
       contact:
         title: 'Contact Form'
-        parentPreset: 'default'
+        parentPreset: default
         formElementTypes:
           'TYPO3.Form:Form':
             renderingOptions:
@@ -16,9 +17,7 @@ TYPO3:
           'TYPO3.Form:Page':
             renderingOptions:
               templatePathPattern: 'resource://MapSeven.ContactForm/Private/Templates/Form/Page.html'
-
   Neos:
     typoScript:
       autoInclude:
-          # auto-include "Private/Resources/TypoScript/Root.ts2" from this package!
-        'MapSeven.ContactForm': TRUE
+        MapSeven.ContactForm: true
